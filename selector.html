@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors: Tag, Div, Class, and ID</title>
+    <style>
+        /* 1. TAG SELECTOR (Applies to the whole page) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        /* 2. DIV TAG SELECTOR (Styles all div containers) */
+        div {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            
+            b
+        }
+
+        /* 3. CLASS SELECTOR (Reusable - starts with a dot '.') */
+        .highlight-text {
+            color: #d9534f;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        
+            
+            
+        }
+
+        /* 4. ID SELECTOR (Unique - starts with a hashtag '#') */
+        #featured-section {
+            border: 2px solid #007bff;
+            background-color: #e6f2ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Standard Section</h1>
+        <p>This is a normal paragraph inside a basic div container.</p>
+        <p class="highlight-text">This paragraph is styled using a CLASS selector. It stands out!</p>
+        <button class="btn-primary">Normal Button</button>
+    </div>
+    
+    <div id="featured-section">
+        <h1>★ Featured Section</h1>
+        <p>This div has a unique ID selector applied to it, giving it a blue background and border.</p>
+        <p class="highlight-text">We can reuse the same CLASS here too!</p>
+        <button class="btn-primary">Featured Button</button>
+    </div>
+
+</body>
+</html>
